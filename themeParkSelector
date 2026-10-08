@@ -1,0 +1,21 @@
+function[price] = themeParkSelector(themeParkChosen, i)
+% Gives the price of the theme park ticket chosen when provided with the
+% theme park
+
+
+% Hard Coded Inputs
+priceUniversalStudios = 100;
+priceMagicKingdom = 150;
+priceSeaworldOrlando = 130;
+
+
+if themeParkChosen == 1
+        fprintf('You have chosen Universal Studios. Their ticket costs $%d.\n', i, priceUniversalStudios);
+        price = 100;
+elseif themeParkChosen == 2
+        fprintf('You have chosen Magic Kingdom for person %d. Their ticket costs $%d.\n', i, priceMagicKingdom);
+        price = 150;
+else
+        fprintf('You have chosen Seaworld Orlando for person %d. Their ticket costs $%d.\n', i, priceSeaworldOrlando);
+        price = 130;
+end
